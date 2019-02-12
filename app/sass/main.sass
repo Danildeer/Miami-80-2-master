@@ -1,0 +1,137 @@
+*
+	margin: 0
+	padding: 0
+
+@mixin block ($name, $wid, $hei, $bcgr, $bord, $mrgn, $padng)
+	.#{$name}1
+		width: $wid
+		float: right
+		height: $hei
+		background-color: $bcgr
+		border: $bord
+		margin: $mrgn
+		padding-left: $padng
+	.#{$name}2
+		width: $wid
+		float: right
+		height: $hei
+		background-color: $bcgr
+		border: $bord
+		margin: $mrgn
+		padding-left: $padng
+	.#{$name}3
+		width: $wid
+		float: right
+		height: $hei
+		background-color: $bcgr
+		border: $bord
+		margin: $mrgn
+		padding-left: $padng
+	.#{$name}4
+		width: $wid
+		float: right
+		height: $hei
+		background-color: $bcgr
+		border: $bord
+		margin: $mrgn
+		padding-left: $padng
+	.#{$name}5
+		width: $wid
+		float: right
+		height: $hei
+		background-color: $bcgr
+		border: $bord
+		margin: $mrgn
+		padding-left: $padng
+@include block (block, 220px, 40px, green, 4px solid red, 25px, 45px)
+
+body
+	background: linear-gradient(to bottom, #EECFBA, #ff7ac1, #ff669c, #cc1039)
+	div
+		li
+			 text-align: left
+// nav
+// 	div
+// 		color:#FF8C00 
+// 		box-shadow:1px 1px 0 
+// 		rgb(102,50,105),1px 1px 0 
+// 		rgb(89,37,92),2px 2px 0 
+// 		rgb(76,24,79),3px 3px 0 
+// 		rgb(63,11,66),4px 4px 0 
+// 		rgb(50,-2,53),5px 5px 0 
+// 		rgb(37,-15,40),6px 6px 0 
+// 		rgb(23,-29,26),7px 7px 0 
+// 		rgb(10,-42,13),8px 8px 0 
+// 		rgb(-3,-55,0),9px 9px 0 
+// 		rgb(-16,-68,-13),10px 10px 0 
+// 		rgb(-29,-81,-26),11px 11px 0 
+// 		rgb(-42,-94,-39),12px 12px 0 
+// 		rgb(-55,-107,-52), 13px 13px 0 
+// 		rgb(-68,-120,-65),14px 14px 13px 
+// 		rgba(0,0,0,0.8),14px 14px 1px 
+// 		rgba(0,0,0,0.5),0px 0px 13px 
+// 		rgba(0,0,0,.2)
+
+
+	
+	
+
+header
+	width: 100%
+	height: 200px 
+	background: url(../img/shapka.png) 
+	p
+		text-align: center
+		font-size: 40px
+		  
+
+.logo
+	position: absolute
+	margin-top: -50px
+.shap
+	position: absolute
+		
+		
+
+@mixin cblock ($name, $wid, $hei, $bord, $mrgnl, $mrgnt)
+	.#{$name}1
+		width: 300px
+		float: left
+		height: $hei
+		border: $bord
+		//margin-left: $mrgnl
+		margin-top: $mrgnt
+		font-size: 40px
+		text-align: center
+	.#{$name}2
+		width: 1000px
+		float: left
+		height: $hei
+		border: $bord
+		//margin-left: $mrgnl
+		margin-top: $mrgnt
+	.#{$name}3
+		width: $wid
+		float: left
+		height: $hei
+		border: $bord
+		//margin-left: $mrgnl
+		margin-top: $mrgnt
+@include cblock (cblock, 31%, 800px, 1px solid red, 10px, 40px )
+
+
+
+footer
+	width: 100%
+	height: 150px
+	// border: 1px solid black
+	background-color: #a80057
+	display: flex
+  	flex-direction: column
+  	height: 100%
+footer
+	h3
+		float: left
+		font-size: 30px
+		margin-left: 250px	
+		
